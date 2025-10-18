@@ -1,0 +1,83 @@
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+}
+
+
+/* ------------------------------------- */
+/* Layout Fixes: Separation and Centering */
+/* ------------------------------------- */
+
+/* 1. Sets the overall layout to flex and ensures content and image are separated */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px; /* Increased gap to ensure text and image are separated and prevent overlap */
+}
+
+/* 2. Positions the carousel area on the RIGHT side */
+.about-image {
+  flex: 1; 
+  display: flex;
+  /* CRITICAL FIX 1: Must be flex-end to push the content (the carousel) to the right */
+  justify-content: flex-end; 
+  align-items: center;
+  min-height: 500px; 
+}
+
+/* ------------------------------------- */
+/* 3D Card Carousel Fixes (3D Context & Positioning) */
+/* ------------------------------------- */
+
+.gsap-card-carousel {
+  position: relative; 
+  width: 450px; /* Defines the total area for the carousel */
+  height: 450px;
+  perspective: 1000px; 
+}
+
+.card-image {
+  position: absolute;
+  top: 50%;
+  
+  /* CRITICAL FIX 2: Anchor the whole carousel system to the right edge of its container. */
+  /* Left: 100% moves the starting point (top-left corner) to the right edge of the parent. */
+  left: 100%;
+  
+  /* CRITICAL FIX 3: Translate then moves the card back by its FULL width (100%) and half its height (50%). 
+     This centers the system *visually* at the right edge of the layout, pulling it away from the text. */
+  transform: translate(-100%, -50%); 
+
+  width: 250px; /* Size of the card in the center slot */
+  height: 350px; 
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  
+  transform-style: preserve-3d;
+  will-change: transform, opacity; 
+}
+
+/* --- ReCAPTCHA Badge Hiding Fix --- */
+
+.grecaptcha-badge {
+    /* CRITICAL: Hides the badge visually */
+    visibility: hidden; 
+}

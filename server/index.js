@@ -25,7 +25,7 @@ app.post("/contact", async (req, res) => {
   const { name, email, message, phone, service, recaptchaToken } = req.body;
 
   try {
-    // ✅ reCAPTCHA validation
+
     const recaptchaSecret = process.env.RECAPTCHA_SECRET;
     const recaptchaResponse = await axios.post(
       `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${recaptchaToken}`

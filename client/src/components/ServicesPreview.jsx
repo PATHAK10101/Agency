@@ -43,7 +43,7 @@ const ServicesPreview = () => {
               Learn More <i className="fas fa-arrow-right"></i>
             </a>
           </div>
-          <div className="service-card">
+          {/* <div className="service-card">
             <div className="service-icon">
               <i className="fas fa-globe"></i>
             </div>
@@ -52,7 +52,7 @@ const ServicesPreview = () => {
             <a href="#services" className="service-link" onClick={() => scrollToSection('services')}>
               Learn More <i className="fas fa-arrow-right"></i>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
