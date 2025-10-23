@@ -81,16 +81,15 @@ const Contact = () => {
                 <i className="fas fa-envelope"></i>
                 <div>
                   <h4>Email</h4>
-                  <p>arnavgupta0414@gmail.com</p>
-                  <p>pinartukta99@gmail.com</p>
+                  <p>agencypiara@gmail.com</p>
                 </div>
               </div>
               <div className="contact-item">
                 <i className="fas fa-phone"></i>
                 <div>
                   <h4>Phone</h4>
-                  <p>+971 50 616 9723</p>
-                  <p>+90 539 584 2607</p>
+                  <p>+971 58 512 0414</p>
+                 
                 </div>
               </div>
               <div className="contact-item">

@@ -42,16 +42,16 @@ const Footer = () => {
                 <a href="#"><i className="fab fa-instagram"></i></a>
                 <a href="#"><i className="fab fa-facebook"></i></a>
                 <a href="#"><i className="fab fa-twitter"></i></a> */}
-                <Linkedin className="social-icon" />
-                <Instagram className="social-icon" />
-                <Facebook className="social-icon" />
-                <Twitter className="social-icon" />
+                <a href="https://www.linkedin.com/company/piara-agency/" target="_blank" rel="noopener noreferrer"><Linkedin className="social-icon" /></a>
+                <a href="https://www.instagram.com/piara_agency?igsh=ZDlld3pobWMxZGRz" target="_blank" rel="noopener noreferrer"><Instagram className="social-icon" /></a>
+                <a href="https://www.facebook.com/share/1BPgZJjs93/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><Facebook className="social-icon" /></a>
+                <a href="https://twitter.com/piraagency" target="_blank" rel="noopener noreferrer"><Twitter className="social-icon" /></a>
               </div>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 PIARA AGENCY. All rights reserved. | IFZA Free Zone, Dubai, UAE</p>
+          <p>&copy; 2025 PIARA AGENCY. All rights reserved. | IFZA Free Zone, Dubai, UAE</p>
         </div>
       </div>
     </footer>

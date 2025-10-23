@@ -1,7 +1,7 @@
 import React from 'react';
 import cinematicEquipment from '../assets/images/cinematic-equipment.jpg';
+import marketingTeam from '../assets/images/images.png';
 import cameraSetup from '../assets/images/professional-camera-setup.jpg';
-import marketingTeam from '../assets/images/digital-marketing-team.jpg';
 
 const Portfolio = () => {
   return (
@@ -21,20 +21,20 @@ const Portfolio = () => {
           </div>
           <div className="portfolio-item">
             <div className="portfolio-image">
-              <img src={cameraSetup} alt="Professional Camera Setup" />
+              <img src={marketingTeam} alt="Digital Marketing Team" />
               <div className="portfolio-overlay">
-                <h3>Restaurant Chain Rebrand</h3>
-                <p>Visual identity and digital marketing campaign</p>
+                <h3>Real Estate Development</h3>
+                <p>Promotional video series and digital strategy</p>
                 <a href="#" className="portfolio-link">View Project</a>
               </div>
             </div>
           </div>
           <div className="portfolio-item">
             <div className="portfolio-image">
-              <img src={marketingTeam} alt="Digital Marketing Team" />
+              <img src={cameraSetup} alt="Professional Camera Setup" />
               <div className="portfolio-overlay">
-                <h3>Real Estate Development</h3>
-                <p>Promotional video series and digital strategy</p>
+                <h3>Restaurant Chain Rebrand</h3>
+                <p>Visual identity and digital marketing campaign</p>
                 <a href="#" className="portfolio-link">View Project</a>
               </div>
             </div>

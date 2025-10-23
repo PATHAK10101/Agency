@@ -3,9 +3,9 @@ import gsap from 'gsap';
 
 // IMPORTANT: Ensure these image files exist in your '../assets/images/' directory
 import dubaiCityscape from '../assets/images/dubai1.jpg'; // Card 1
-import dubaiTeam from '../assets/images/dubai3.jpg';   // Card 3
-import dubaiSunset from '../assets/images/dubai1.jpg'; // Card 4
-import dubaiOffice from '../assets/images/dubai2.jpg'; // Card 2
+import dubaiTeam from '../assets/images/3.png';   // Card 3
+import dubaiSunset from '../assets/images/2.png'; // Card 4
+import dubaiOffice from '../assets/images/i.png'; // Card 2
 
 
 // Array of all images in the sequence
